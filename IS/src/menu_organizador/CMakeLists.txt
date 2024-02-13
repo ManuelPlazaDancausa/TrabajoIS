@@ -1,0 +1,5 @@
+add_library(menu_organizador menu_organizador.cc menu_organizador.h)
+target_link_libraries(menu_organizador PUBLIC user)
+target_link_libraries(menu_organizador PUBLIC global)
+target_link_libraries(menu_organizador PUBLIC organizador)
+target_include_directories(menu_organizador PUBLIC ${CMAKE_CURRENT_LIST_DIR})

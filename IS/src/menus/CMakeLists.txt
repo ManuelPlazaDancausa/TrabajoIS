@@ -1,0 +1,8 @@
+add_library(menus menus.cc menus.h)
+target_link_libraries(menus PUBLIC user)
+target_link_libraries(menus PUBLIC menu_director)
+target_link_libraries(menus PUBLIC menu_organizador)
+target_link_libraries(menus PUBLIC menu_user)
+target_link_libraries(menus PUBLIC global)
+target_link_libraries(menus PUBLIC userManager)
+target_include_directories(menus PUBLIC ${CMAKE_CURRENT_LIST_DIR})

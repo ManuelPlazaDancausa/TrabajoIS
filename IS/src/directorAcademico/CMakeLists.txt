@@ -1,0 +1,5 @@
+add_library(directorAcademico directorAcademico.cc directorAcademico.h)
+target_link_libraries(directorAcademico PUBLIC evento)
+target_link_libraries(directorAcademico PUBLIC global)
+target_link_libraries(directorAcademico PUBLIC user)
+target_include_directories(directorAcademico PUBLIC ${CMAKE_CURRENT_LIST_DIR})

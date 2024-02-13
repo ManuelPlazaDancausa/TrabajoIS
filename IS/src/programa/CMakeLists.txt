@@ -1,0 +1,6 @@
+add_library(programa programa.cc programa.h)
+target_link_libraries(programa PUBLIC user)
+target_link_libraries(programa PUBLIC evento)
+target_link_libraries(programa PUBLIC userManager)
+target_link_libraries(programa PUBLIC global)
+target_include_directories(programa PUBLIC ${CMAKE_CURRENT_LIST_DIR})
